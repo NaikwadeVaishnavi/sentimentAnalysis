@@ -1,53 +1,38 @@
-# Sentiment Analysis using NLTK
+# Sentiment Analysis NLP 🚀
 
+This is a simple yet powerful sentiment analysis tool using NLTK’s VADER model. It classifies input text into Positive, Negative, or Neutral categories based on sentiment scores.
 
-This Python script demonstrates sentiment analysis using the Natural Language Toolkit (NLTK) library and its VADER (Valence Aware Dictionary and sEntiment Reasoner) sentiment intensity analyzer. 
-The script takes user input, analyzes the sentiment of the entered text, and provides sentiment scores, including a compound score indicating overall sentiment.
+## Features
+- Real-time sentiment detection
+- Easy to extend into a web UI using Streamlit
+- Lightweight and no training needed
 
-## Usage
+## Setup
+```bash
+git clone https://github.com/your-username/Sentiment-Analysis-NLP.git
+cd Sentiment-Analysis-NLP
+pip install -r requirements.txt
+```
 
-1. **Install Dependencies**:
+## Run the Console App
+```bash
+python main.py
+```
 
-   Make sure you have NLTK installed. You can install it using the following command:
+## Optional: Run the Streamlit UI
+```bash
+streamlit run streamlit_app.py
+```
 
-   ```bash
-   pip install nltk
-   ```
+## Output Example
+```
+Sentiment: Positive
+Positive Score: 0.52
+Negative Score: 0.00
+Neutral Score: 0.48
+Compound Score: 0.8126
+```
 
-2. **Download NLTK Data**:
-
-   Run the script provided (`sentiment_analysis_nltk.py`) and follow the prompts to download the required NLTK data:
-
-   ```python
-   import nltk
-   nltk.download('vader_lexicon')
-   ```
-
-3. **Run Sentiment Analysis Script**:
-
-   Execute the script (`sentiment_analysis_nltk.py`) and enter the text for sentiment analysis when prompted.
-
-   ```bash
-   python sentiment_analysis_nltk.py
-   ```
-
-4. **Interpret Results**:
-
-   The script will output sentiment scores, classifying the sentiment as Positive, Negative, or Neutral based on the compound score.
-
-## Script Explanation
-
-- The script initializes the SentimentIntensityAnalyzer from the NLTK library.
-- User input is collected for sentiment analysis.
-- Sentiment scores (positive, negative, neutral, compound) are obtained using the analyzer.
-- The compound score is used to classify the overall sentiment as Positive, Negative, or Neutral.
-- Results, including sentiment scores, are printed to the console.
-
-## Dependencies
-
-- Python 3.x
-- NLTK library
-
-
-
-
+## References
+- [NLTK VADER](https://www.nltk.org/_modules/nltk/sentiment/vader.html)
+- [Streamlit Docs](https://docs.streamlit.io/)
